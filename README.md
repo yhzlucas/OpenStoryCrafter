@@ -1,62 +1,67 @@
 # OpenStoryCrafter
-OpenStoryCrafter is an open-source, AI-driven story creation toolkit inspired by the application MagicLight AI. The goal of this project is to provide a powerful and easily-extendable framework that enables users to automatically transform scripts, novels, or any form of text into various visual and audio formats, such as comics, animations, or audiobooks.
 
-Through this project, we aim to lower the barrier to content creation, empowering every creative individual to become a "storytelling magician" and effortlessly bring their ideas to life.
+**OpenStoryCrafter** is a **structured AI story planner** that turns outlines into branching dialogue, events, and decisions. It is suitable for both **interactive fiction writers** and **character AI platform developers**.
 
-# Core Features
-# AI Script Analysis & Scene Segmentation:
-Intelligently identifies scenes, characters, dialogues, and actions within a script.
-Automatically segments long-form text into distinct scenes suitable for visual presentation.
+## ✨ What is OpenStoryCrafter?
 
-# Multi-Style Image Generation:
-Supports a variety of artistic styles (e.g., Japanese Manga, American Comic, Cyberpunk, Ink Wash Painting).
-Allows users to upload custom style models or fine-tune the visual style through simple text prompts.
+OpenStoryCrafter is designed to streamline the creative workflow for narrative-driven experiences by enabling:
 
-# Character Consistency:
-Ensures high consistency in a character's appearance across different scenes and frames using advanced character recognition and locking technology.
+- Structuring of scenes, dialogue, and choices in a clean, editable format (YAML/JSON)
+- Export to formats ready for integration with AI chat systems, visual novel engines, or branching video generators
+- Quick iteration from a high-level outline to richly detailed interactions
 
-# One-Click Generation of Motion Comics/Videos:
-Automatically adds camera movements, transitions, and subtitles to the generated static images based on the script.
-Supports the import of audio files (e.g., background music, sound effects, voice-overs) and aligns them with the visual timeline.
+Whether you are building a choice-based visual novel, an immersive AI chat app, or a gamified story experience, this tool provides a reliable base.
 
-# Multilingual Support:
-Includes a built-in text translation feature to translate scripts into multiple languages and generate corresponding subtitles.
+Inspired by tools like [Magic AI](https://magiclight.ai/) — a platform that bridges imagination and AI-powered visual storytelling — OpenStoryCrafter is also built to adapt to the future of [text to video](https://blog.magiclight.ai/) content creation.
 
-# Plugin-Based Architecture:
-Designed with a highly modular structure, making it easy for developers to add new features or models (e.g., integrating new AI image models, text-to-speech engines, etc.).
-# Technology Stack
-Backend: Python, Flask/Django
+## 🧠 Who Is It For?
 
-# AI Models:
-Text Processing: spaCy, NLTK
-Image Generation: Stable Diffusion, Midjourney (API)
-Speech Processing: Coqui TTS, OpenAI Whisper
-Frontend: React, Vue.js
-Database: PostgreSQL, MySQL
-Deployment: Docker, Kubernetes
+- 📝 **Writers of interactive fiction**: Map your story logic, character arcs, and branching events.
+- 🎮 **Game developers**: Use the structure to drive event-based game logic or simulated interactions.
+- 💕 **AI romantic roleplay creators**: Tailored for integration with [simulated romantic gaming AI](https://reelplay.ai/) experiences.
+- 🎬 **AI-generated video creators**: Export structured narratives that feed into video synthesis pipelines.
 
-# Project Roadmap
-# Phase 1 (Core Functionality Development):
-Complete the script analysis and scene segmentation module.
-Integrate Stable Diffusion to implement basic image generation capabilities.
-Develop the character consistency locking feature.
+## 🔧 Core Features
 
-# Phase 2 (Enhanced Feature Development):
-Introduce a motion comic generator.
-Integrate Text-to-Speech (TTS) and Automatic Speech Recognition (ASR) functionalities.
-Develop the plugin system.
+- **Outline-to-Narrative Conversion**: Turn a basic story outline into a complex multi-path storyline.
+- **Branching Support**: Easily manage conditional flows, character choices, and variable outcomes.
+- **Schema-Driven Design**: Use structured YAML/JSON for clarity, compatibility, and automation.
+- **AI Integration Ready**: Generate inputs for LLM-based characters or plug into dialogue agents.
 
-# Phase 3 (Community & Ecosystem Building):
-Launch the official project website and documentation.
-Establish a developer community to encourage contributions.
-Host online hackathons to inspire more creative applications.
+## 🛠 Tech Stack (Planned)
 
-# How to Contribute
-We welcome all developers interested in AI and content creation to join us! You can contribute to the project in the following ways:
-Code Contributions: Fork our project and submit a Pull Request.
-Bug Reports & Suggestions: Submit your issues or ideas in the GitHub Issues section.
-Documentation: Help us improve the project documentation.
-Share Your Work: Showcase the creations you've made using OpenStoryCrafter.
+- Language: Python (with roadmap for Node.js/TypeScript interface)
+- Formats: YAML (primary), JSON (interchange)
+- Tools: OpenAI / Claude API support (coming soon)
 
-# License
-This project is licensed under the MIT License.
+## 🚀 Roadmap
+
+| Version | Features |
+|---------|----------|
+| v0.1    | Scene + dialogue schema, manual YAML editing |
+| v0.2    | Flow visualizer (optional UI with Mermaid.js) |
+| v0.3    | LLM-powered outline-to-YAML conversion |
+| v1.0    | End-to-end integration with [Magic AI](https://magiclight.ai/) and [text to video](https://blog.magiclight.ai/) platforms |
+
+## 🤝 Contributions Welcome
+
+We welcome PRs, feature suggestions, or collaboration proposals — especially from:
+
+- Interactive fiction enthusiasts
+- AI narrative tool creators
+- Visual novel / dialogue system developers
+- Researchers in human-AI storytelling
+
+To get involved, fork this repo, or open an issue with your ideas!
+
+## 📄 License
+
+This project is licensed under the MIT License — feel free to use and build upon it for personal or commercial projects.
+
+---
+
+## 🔗 Related Projects & Tools
+
+- [Magic AI](https://magiclight.ai/): AI-powered text-to-video story platform  
+- [text to video](https://blog.magiclight.ai/): Explore how narratives become generative video content  
+- [simulated romantic gaming AI](https://reelplay.ai/): Interactive relationship and narrative experiences with AI characters  
